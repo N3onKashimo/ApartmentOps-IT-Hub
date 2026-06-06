@@ -1,0 +1,2 @@
+﻿ticket_id,created_at,source,status,priority,service_name,summary,description,raw_alert,ai_summary,kb_article
+INC-SAMPLE,2026-06-06T12:00:00,Uptime Kuma Webhook,Open,Medium,Plex,Plex generated an alert,Sample incident for public demo.,Sample alert payload,"Plex is unreachable. Check container status, port mapping, and recent logs.",KB-001 Service Unavailable Triage

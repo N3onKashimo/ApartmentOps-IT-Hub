@@ -1,0 +1,16 @@
+﻿services:
+  alert-bridge:
+    build: ../alert-bridge
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../.env
+
+  streamlit-hub:
+    image: python:3.12-slim
+    working_dir: /app
+    volumes:
+      - ../streamlit-hub:/app
+    command: sh -c "pip install -r requirements.txt && streamlit run app.py --server.address=0.0.0.0"
+    ports:
+      - "8501:8501"
